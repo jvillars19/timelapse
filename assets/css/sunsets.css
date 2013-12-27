@@ -1,0 +1,50 @@
+#pictures{
+	width:800px;
+	margin:auto;
+}
+img{
+	width:100%;
+}
+
+.slides_container .slides_control li{
+	width:800px;
+	height:600px;
+}
+.slides_container div {
+    
+}
+.slides_container{
+	position:relative;
+	width:800px;
+    height:600px;
+    
+}
+ul.pagination{
+	display:none;
+}
+#controls{
+	margin:auto;
+	width:100px;
+}
+li{
+	list-style-type:none;
+}
+fieldset{
+	position:absolute;
+	top:620px;
+}
+select{
+	float:left;
+}
+#custom{
+	width:35px;
+	float:left;	
+	margin-left:75px;
+
+}
+.appContainer{
+	width:800px;
+}
+.picture{
+	position: absolute;
+}
