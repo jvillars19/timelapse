@@ -4,7 +4,7 @@ if(isset($_GET['date']) && isset($_GET['time']) && isset($_GET['limit'])){
   $date = $_GET['date'];
   $time = $_GET['time'];
   $limit = $_GET['limit'];
-  $dir = "/var/www/www.joshvillars.com/public_html/assets/pictures/" . strval($date);
+  $dir = "/assets/pictures/" . strval($date);
   $data = scandir($dir);
   $data = array_diff($data, array('..', '.'));
   $pics = array();
@@ -27,7 +27,7 @@ if(isset($_GET['date']) && isset($_GET['time']) && isset($_GET['limit'])){
     error('Not enough results');
   }
 }else{
-  echo json_encode(array_diff(scandir("/var/www/www.joshvillars.com/public_html/assets/pictures/"), array("..", ".")));
+  echo json_encode(array_diff(scandir("/assets/pictures/"), array("..", ".")));
 }
 
 function error($msg){
